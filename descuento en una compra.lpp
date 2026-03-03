@@ -1,0 +1,16 @@
+real total, des, tp
+
+inicio
+    escriba "ingresar el total de la compra: "
+    lea total
+
+    si total > 1000 entonces
+        des <- total * 0.10
+    sino
+        des <- 0
+    fin si
+
+    tp <- total - des
+
+    escriba "total a pagar: ", tp
+fin

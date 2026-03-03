@@ -1,0 +1,10 @@
+Entero numero
+inicio
+    escriba "ingrese numero: "
+    lea numero
+    si (numero >= 50) entonces
+        escriba "El numero es positivo"
+      sino
+        escriba "El numero es negativo"
+      fin si
+fin

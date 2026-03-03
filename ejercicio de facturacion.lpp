@@ -1,0 +1,20 @@
+real totalpagar, km, costoextra
+
+inicio
+    escriba "ingresar los kilometros recorridos: "
+    lea km
+
+    si km <= 300 entonces
+        totalpagar <- 100000
+    sino
+        si km <= 1000 entonces
+            costoextra <- (km - 300) * 1000
+            totalpagar <- 100000 + costoextra
+        sino
+            costoextra <- (700 * 1000) + ((km - 1000) * 500)
+            totalpagar <- 100000 + costoextra
+        fin si
+    fin si
+
+    escriba "total a pagar: $", totalpagar
+fin

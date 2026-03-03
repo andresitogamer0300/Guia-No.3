@@ -1,0 +1,35 @@
+cadena [50] nombre
+cadena [5] zona
+real ventas,comis,ihss,tp
+inicio
+    Escriba "Ingresar el nombre del empleado: "
+    lea nombre
+    Escriba "Ingresar las ventas del empleado: "
+    lea ventas
+    Escriba "Ingresar la zona de trabajo: "
+    lea zona
+    si zona = "A" entonces
+         comis <- 0.06 * ventas
+    sino si zona = "B" entonces
+         comis <- 0.08 * ventas
+    sino si zona = "C" entonces
+         comis <- 0.09 * ventas
+    sino
+         comis <- 0
+        fin si
+     fin si
+    
+    fin si
+    si comis > 2400 entonces
+        ihss <- 84
+    sino
+        ihss <- 0.035 * comis
+    fin si
+    tp <- comis - ihss
+    Escriba "comision ganada: ", comis
+    Llamar nueva_linea
+    Escriba "segunda social: ", ihss
+    Llamar nueva_linea
+    Escriba "Total a pagar: ", tp
+    Llamar nueva_linea
+Fin

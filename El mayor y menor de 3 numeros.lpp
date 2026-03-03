@@ -1,0 +1,42 @@
+entero a, b, c, mayor, menor
+
+inicio
+    escriba "ingresar primer numero: "
+    lea a
+    escriba "ingresar segundo numero: "
+    lea b
+    escriba "ingresar tercer numero: "
+    lea c
+
+    si a > b entonces
+        si a > c entonces
+            mayor <- a
+        sino
+            mayor <- c
+        fin si
+    sino
+        si b > c entonces
+            mayor <- b
+        sino
+            mayor <- c
+        fin si
+    fin si
+
+    si a < b entonces
+        si a < c entonces
+            menor <- a
+        sino
+            menor <- c
+        fin si
+    sino
+        si b < c entonces
+            menor <- b
+        sino
+            menor <- c
+        fin si
+    fin si
+
+    escriba "el mayor es: ", mayor
+    llamar nueva_linea
+    escriba "el menor es: ", menor
+fin

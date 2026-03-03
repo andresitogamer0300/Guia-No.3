@@ -1,0 +1,28 @@
+cadena [25] nombre
+entero edad, estrato
+caracter genero
+
+inicio
+    escriba "ingrese su nombre: "
+    lea nombre
+    escriba "ingrese su genero: "
+    lea genero
+    escriba "ingrese su edad: "
+    lea edad
+    escriba "ingrese su estrato: "
+    lea estrato
+
+    si (genero = 'F') o (genero = 'f') entonces
+        si (edad >= 18) y (edad <= 25) entonces
+            si (estrato = 1) o (estrato = 2) entonces
+                escriba nombre, " Es apta/o para recibir el apoyo economico"
+            sino
+                escriba nombre, " No es apta/o para recibir el apoyo economico"
+            fin si
+        sino
+            escriba nombre, " No es apta/o para recibir el apoyo economico"
+        fin si
+    sino
+        escriba nombre, " No es apta/o para recibir el apoyo economico"
+    fin si
+fin

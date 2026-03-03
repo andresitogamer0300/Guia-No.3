@@ -1,0 +1,14 @@
+Real sueldo, descuento, netopagar
+inicio
+    escriba "ingrese el sueldo del trabajador: "
+    lea sueldo
+    si sueldo <= 1000000 entonces
+      descuento <- sueldo * 0.03
+    sino
+      descuento <- sueldo * 0.05
+    fin si
+    netopagar <- sueldo - descuento
+    escriba "descuento aplicado: ", descuento
+    llamar nueva_linea
+    escriba "neto a pagar: ", netopagar
+fin
